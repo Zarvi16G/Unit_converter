@@ -1,0 +1,112 @@
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Encabezado */
+header {
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Barra de navegación */
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    margin: 0 10px;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #2e7d32;
+}
+
+/* Contenedor principal */
+.contenido {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Formularios */
+.form-container h1 {
+    font-size: 22px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label, span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.center-container {
+    display: flex;              /* Usa flexbox para la alineación */
+    justify-content: center;    /* Centra horizontalmente los elementos */
+    align-items: center;        /* Centra verticalmente los elementos (si es necesario) */
+    gap: 10px;
+}
+
+.form-group input[type="number"],
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Botón */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para el contenedor de resultado */
+

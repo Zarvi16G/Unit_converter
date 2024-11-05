@@ -1,0 +1,35 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'global.css' %}">
+    <meta charset="UTF-8">
+    <title>{% block title %}Unit Converter{% endblock %}</title>
+    
+</head>
+<body>
+
+<header>
+    <h1>Unit Converter</h1>
+</header>
+
+<nav>
+    <a href="{% url 'length' %}">Length</a>
+    <a href="{% url 'weight' %}">Weight</a>
+    <a href="{% url 'temperature' %}">Temperature</a> 
+</nav>
+<body>
+    <div class="contenido">
+        <div class="form-container">
+            {% block h1 %}<h1>Calculation Result</h1>{% endblock %}
+            {% block content %}{% endblock %}
+        </div>
+        <div class="from-group">
+            <form action="{% url 'length' %}" method="GET" style="display:inline;">
+                <button type="submit" class="submit-btn">Reset</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

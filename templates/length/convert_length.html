@@ -1,0 +1,11 @@
+{% extends "convert.html" %}
+{% block content %}
+<div class="from-group">
+    <span class="center-container">Longitud Original:</span>
+    <span class="center-container">{{ length }} {{ unit_from }}</span>
+</div>
+<div class="from-group">
+    <span class="center-container">Longitud Convertida:</span>
+    <span class="center-container">{{ result }} {{ unit_to }}</span>
+</div>
+{% endblock %}

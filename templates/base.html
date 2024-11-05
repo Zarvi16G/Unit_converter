@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'global.css' %}">
+    <meta charset="UTF-8">
+    <title>Unit Converter</title>
+    
+</head>
+<body>
+
+<header>
+    <h1>Unit Converter</h1>
+</header>
+
+<nav>
+    <a href="{% url 'length' %}">Length</a>
+    <a href="{% url 'weight' %}">Weight</a>
+    <a href="{% url 'temperature' %}">Temperature</a> 
+</nav>
+
+<div class="contenido">
+    <div class="form-container">
+    {% block h1 %}{% endblock %}
+    
+
+    {% block content %}
+        
+      {% endblock %}
+
+</body>
+</html>

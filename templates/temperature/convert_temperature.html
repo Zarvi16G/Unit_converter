@@ -1,0 +1,11 @@
+{% extends "convert.html" %}
+{% block content %}
+<div class="from-group">
+    <span class="center-container">Original Temperature:</span>
+    <span class="center-container">{{ temperature }} {{ unit_from }}</span>
+</div>
+<div class="from-group">
+    <span class="center-container">Converted Temperature:</span>
+    <span class="center-container">{{ result }} {{ unit_to }}</span>
+</div>
+{% endblock %}
